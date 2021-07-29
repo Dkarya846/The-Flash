@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>The Flash</title>
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./src/css/navbar.css">
+  <link rel="stylesheet" href="./src/css/carousel.css">
+  <link rel="stylesheet" href="./src/css/about.css">
+  <link rel="stylesheet" href="./src/css/characters.css">
+  <link rel="stylesheet" href="./src/css/seasons.css">
+</head>
+
+<body>
+
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8A2712;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./src/images/logo/logo.png" alt=""> The flAsh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav  align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="/"> Home </a>
+          </li>
+          <span class="separator"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/characters/"> Characters </a>
+          </li>
+          <span class="separator"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/enemies/"> Enemies </a>
+          </li>
+          <span class="separator"></span>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/seasons/"> Seasons </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends-->
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div style="background: url(./src/images/carousel/image6.jpg)" class="d-block w-100"
+          alt="./src/images/carousel/image1.jpeg">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Sometimes we lie for love, especially when it comes to family.</h5>
+          <p>- Joe West</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="background:url(./src/images/carousel/image5.jpg)" class="d-block w-100"
+          alt="./src/images/carousel/image1.jpeg">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Not every hero wears a mask. Some heroes save the day in the simplest of ways. By just being there for us,
+            or letting us know we’re believed in.</h5>
+          <p>- Barry Allen</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="background:url(./src/images/carousel/image1.png)" class="d-block w-100"
+          alt="./src/images/carousel/image1.jpeg">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>You can’t let your love for somebody cause you to be afraid of what might happen. You gotta take the good
+            with the bad, no matter what.</h5>
+          <p>- Barry Allen</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="background:url(./src/images/carousel/image4.jpg)" class="d-block w-100"
+          alt="./src/images/carousel/image1.jpeg"></div>
+
+        <div class="carousel-caption d-none d-md-block">
+          <h5>When you don’t have the key to the lock, sometimes you have to kick in the door.</h5>
+          <p>- Harrison Wells</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div id="about-section">
+    <div class="section-1"><img src="./src/images/about/image 6.png" alt=""></div>
+    <div class="section-2">
+      <a href="https://www.instagram.com/cwtheflash/">
+        <div class="social-icons instagram">
+          <svg class="instagram-icon social-icon" title="instagram" viewBox="0 0 32 32"
+            focusable="false" aria-label="Instagram">
+            <title>instagram</title>
+            <path
+              d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
+            </path>
+            <path
+              d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+            </path>
+            <path
+              d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+            </path>
+          </svg>
+        </div>
+      </a>
+      <a href="https://twitter.com/CW_TheFlash">
+        <div class="social-icons twitter">
+          <svg class="twitter-icon social-icon" title="twitter" viewBox="0 0 32 32"
+            focusable="false" aria-label="Twitter">
+            <title>twitter</title>
+            <path
+              d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
+            </path>
+          </svg>
+        </div>
+      </a>
+      <a href="https://www.facebook.com/CWTheFlash/">
+        <div class="social-icons facebook">
+          <svg class="facebook-icon social-icon" title="facebook" viewBox="0 0 32 32"
+            focusable="false" aria-label="Facebook">
+            <title>facebook</title>
+            <path
+              d="M31.997 15.999c0-8.836-7.163-15.999-15.999-15.999s-15.999 7.163-15.999 15.999c0 7.985 5.851 14.604 13.499 15.804v-11.18h-4.062v-4.625h4.062v-3.525c0-4.010 2.389-6.225 6.043-6.225 1.75 0 3.581 0.312 3.581 0.312v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.001h4.437l-0.709 4.625h-3.728v11.18c7.649-1.2 13.499-7.819 13.499-15.804z">
+            </path>
+          </svg>
+        </div>
+      </a>
+    </div>
+    <div class="section-3">
+      <h5 class="about-heading">Know the Flash</h5>
+      <p class="about">From the Arrow creative team, The Flash is a fast-paced superhero drama that follows the
+        high-speed adventures of the Fastest Man Alive. Featuring a cast of colorful heroes and spectacular special
+        effects, the hit CW series follows Central City Police scientist Barry Allen, an everyday guy with the heart of
+        a hero, a secret super power and the genuine desire to help others. With a winning personality and a smile on
+        his face, Barry Allen -- aka The Flash -- is finally moving forward in life ... very, very fast!</p>
+
+    </div>
+  </div>
+
+  <div class="characters">
+    <h1 class="heading">Characters</h1>
+    <div class="characters-row">
+      <div class="character-container">
+        <div class="character">
+          <div class="char-name">The Flash</div>
+          <div class="char-image">
+            <img src="./src/images/characters/the-flash.jpg" alt="The Flash">
+          </div>
+          <div class="char-alter-ego">Barry Allen</div>
+        </div>
+        <a class="character played-by" href="https://en.wikipedia.org/wiki/Grant_Gustin" target="_blank">
+          <div class="char-name">Played By</div>
+          <div class="char-image">
+            <img src="./src/images/characters/grant-gustin.jpg" alt="Grant Gustin">
+          </div>
+          <div class="char-alter-ego">Grant Gustin</div>
+        </a>
+      </div>
+      <div class="character-container">
+        <div class="character">
+          <div class="char-name">Mecha Vibe</div>
+          <div class="char-image">
+            <img src="./src/images/characters/mecha-vibe.jpg" alt="Mecha Vibe">
+          </div>
+          <div class="char-alter-ego">Cisco Ramon</div>
+        </div>
+        <a class="character played-by" href="https://en.wikipedia.org/wiki/Carlos_Valdes_(actor)" target="_blank">
+          <div class="char-name">Played By</div>
+          <div class="char-image">
+            <img src="./src/images/characters/carlos-valdes.jpg" alt="Carlos Valdes">
+          </div>
+          <div class="char-alter-ego">Carlos Valdes</div>
+        </a>
+      </div>
+      <div class="character-container">
+        <div class="character">
+          <div class="char-name">Frost</div>
+          <div class="char-image">
+            <img src="./src/images/characters/frost.webp" alt="Frost">
+          </div>
+          <div class="char-alter-ego">Catlin Snow</div>
+        </div>
+        <a class="character played-by" href="https://en.wikipedia.org/wiki/Danielle_Panabaker" target="_blank">
+          <div class="char-name">Played By</div>
+          <div class="char-image">
+            <img src="./src/images/characters/danielle-panabaker.jpg" alt="Danielle Panabaker">
+          </div>
+          <div class="char-alter-ego">Danielle Panabaker</div>
+        </a>
+      </div>
+    </div>
+    <div class="view-more">
+      <a href="./pages/characters/">View More</a>
+    </div>
+  </div>
+
+  <div class="characters enemies">
+    <h1 class="heading">Enemies</h1>
+    <div class="characters-row">
+      <div class="character-container">
+        <div class="character">
+          <div class="char-name">Reverse Flash</div>
+          <div class="char-image">
+            <img src="./src/images/characters/reverse-flash.jpg" alt="Reverse Flash">
+          </div>
+          <div class="char-alter-ego">Eobard Thawne</div>
+        </div>
+        <a class="character played-by" href="https://en.wikipedia.org/wiki/Tom_Cavanagh" target="_blank">
+          <div class="char-name">Played By</div>
+          <div class="char-image">
+            <img src="./src/images/characters/tom-cavanagh.jpg" alt="Tom Cavanagh">
+          </div>
+          <div class="char-alter-ego">Tom Cavanagh</div>
+        </a>
+      </div>
+      <div class="character-container">
+        <div class="character">
+          <div class="char-name">Reverse Flash</div>
+          <div class="char-image">
+            <img src="https://static.wikia.nocookie.net/marvel_dc/images/4/43/Matt_Letscher_Mug_1.jpg"
+              alt="Reverse Flash">
+          </div>
+          <div class="char-alter-ego">Eobard Thawne</div>
+        </div>
+        <a class="character played-by" href="https://en.wikipedia.org/wiki/Matt_Letscher" target="_blank">
+          <div class="char-name">Played By</div>
+          <div class="char-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Matt_Letscher.jpg/220px-Matt_Letscher.jpg"
+              alt="Matt Letscher">
+          </div>
+          <div class="char-alter-ego">Matt Letscher</div>
+        </a>
+      </div>
+      <div class="character-container">
+        <div class="character">
+          <div class="char-name">Zoom</div>
+          <div class="char-image">
+            <img src="./src/images/characters/zoom.jpg" alt="Zoom">
+          </div>
+          <div class="char-alter-ego">Hunter Zoloman</div>
+        </div>
+        <a class="character played-by" href="https://en.wikipedia.org/wiki/Teddy_Sears" target="_blank">
+          <div class="char-name">Played By</div>
+          <div class="char-image">
+            <img src="./src/images/characters/teddy-sears.jpg" alt="Teddy Sears">
+          </div>
+          <div class="char-alter-ego">Teddy Sears</div>
+        </a>
+      </div>
+    </div>
+    <div class="view-more">
+      <a href="./pages/enemies/">View More</a>
+    </div>
+  </div>
+
+  <div class="seasons" id="seasons">
+    <h1 class="heading">Seasons</h1>
+    <div class="season-container">
+      <div class="season-title">SEASON 1</div>
+      <div class="season">
+        <div class="season-trailer">
+          <iframe src="https://www.youtube.com/embed/Yj0l7iGKh8g" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="episodes">
+          <div class="episodes-row">
+            <div class="episode">
+              <a target="_blank" href="https://tvline.com/wp-content/uploads/2014/09/the-flash-season-1-photos-318.jpg">
+                <img src="https://tvline.com/wp-content/uploads/2014/09/the-flash-season-1-photos-318.jpg" alt="">
+              </a>
+            </div>
+            <div class="episode">
+              <img src="https://static.onecms.io/wp-content/uploads/sites/6/2015/05/the-flash-recap-2000.jpg" alt="">
+            </div>
+          </div>
+          <div class="episodes-row">
+            <div class="episode">
+              <img src="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/lg/public/2015/10/06/the_flash.jpg"
+                alt="">
+            </div>
+            <div class="episode">
+              <img
+                src="http://4.bp.blogspot.com/-ufaGYfpMMVQ/VNvLLi9RjeI/AAAAAAAAQDo/o5pOEIFQq94/s1600/the-flash-%2B13%2B.1.jpg"
+                alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view-more">
+      <a href="./pages/seasons/">View More</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="desc">Created by Deepak Kumar</div>
+    <div class="social-handles">
+      <a href="https://www.linkedin.com/in/dkarya846/">
+        <div class="social-icons twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+          </svg>
+        </div>
+      </a>
+      <a href="https://github.com/Dkarya846/">
+        <div class="social-icons facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" class="facebook-icon social-icon" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./src/js/about.js"></script>
+</body>
+
+</html>

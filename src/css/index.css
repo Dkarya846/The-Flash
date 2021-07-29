@@ -1,0 +1,160 @@
+@font-face {
+  font-family: logoFont;
+  src: url(../fonts/fonts.ttf);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Kostel_Infinity_Sans.ttf);
+}
+
+* {
+  transition: all 0.1s ease-in-out;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #8a2712 #f1f1f1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8a2712;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8a2712;
+}
+
+/* heading  */
+
+.heading {
+  color: white;
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  background-color: #8a2712;
+  padding: 10px 0;
+  border: 2px solid #ffd100;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading::before,
+.heading::after {
+  content: url("../images/extras/lightning.svg");
+  display: flex;
+  padding: 0 5px;
+}
+
+.view-more {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: myFirstFont;
+}
+
+.view-more a {
+  background-color: #8a2712;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px 10px;
+}
+
+.view-more a:hover {
+  color: #8a2712;
+  border-color: #8a2712;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8a2712;
+  color: white;
+  font-weight: bold;
+}
+
+.social-handles {
+  display: flex;
+}
+
+.social-handles .social-icons {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.social-icons {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in;
+}
+
+.social-icons svg {
+  width: 60%;
+  height: 60%;
+}
+
+.instagram-icon {
+  fill: rgb(196, 0, 145);
+}
+
+.twitter-icon {
+  fill: rgb(0, 162, 245);
+}
+
+.social-icons:hover svg {
+  fill: white;
+}
+
+.facebook-icon {
+  fill: rgb(23, 120, 242);
+}
+
+.instagram:hover {
+  background: rgb(196, 0, 145);
+}
+
+.twitter:hover {
+  background: rgb(0, 162, 245);
+}
+
+.facebook:hover {
+  background-color: rgb(23, 120, 242);
+}
+
+@media (max-width: 360px) {
+  footer {
+    height: auto;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+}

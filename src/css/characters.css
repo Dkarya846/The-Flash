@@ -1,0 +1,84 @@
+/* characters */
+
+.characters {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/characters/image1.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.enemies {
+  background: url(../images/enemies/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.characters-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 15px 30px !important;
+}
+
+.character-container {
+  width: auto;
+  height: max-content;
+  background: #8a2712;
+  padding: 0px !important;
+  position: relative;
+}
+
+.character {
+  border-right: 2px solid #ffd100;
+  border-left: 2px solid #ffd100;
+  transition: all 300ms ease-in;
+}
+
+.played-by {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.character-container:hover .played-by {
+  opacity: 1;
+}
+
+.char-name,
+.char-alter-ego {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: myFirstFont;
+  text-transform: uppercase;
+  border-top: 2px solid #ffd100;
+  border-bottom: 2px solid #ffd100;
+  background: #8a2712;
+}
+
+.char-image {
+  width: 100%;
+}
+.char-image img {
+  width: 250px;
+  height: 300px;
+}
+
+@media (max-width: 882px) {
+  .characters {
+    height: auto;
+  }
+}
